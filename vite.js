@@ -98,7 +98,7 @@ function setupVite(app, server) {
                                     return [4 /*yield*/, fs_1.default.promises.readFile(clientTemplate, "utf-8")];
                                 case 2:
                                     template = _a.sent();
-                                    template = template.replace("src=\"/src/main.tsx\"", "src=\"/src/main.tsx?v=".concat((0, nanoid_1.nanoid)(), "\""));
+                                    template = template.replace("src=\"/src/main.js\"", "src=\"/src/main.js?v=".concat((0, nanoid_1.nanoid)(), "\""));
                                     return [4 /*yield*/, vite.transformIndexHtml(url, template)];
                                 case 3:
                                     page = _a.sent();
