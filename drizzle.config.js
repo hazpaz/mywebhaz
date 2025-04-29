@@ -6,7 +6,7 @@ if (!process.env.DATABASE_URL) {
 }
 exports.default = (0, drizzle_kit_1.defineConfig)({
     out: "./migrations",
-    schema: "./shared/schema.ts",
+    schema: "./shared/schema.js",
     dialect: "postgresql",
     dbCredentials: {
         url: process.env.DATABASE_URL,
